@@ -35,7 +35,7 @@ class Day1 {
 
 @main def main(): Unit = {
   val day1 = Day1()
-  val file = Source.fromResource("day1/input1.txt")
+  val file = Source.fromResource("day1/input.txt")
   val numbers = file.getLines().map(line => line.toInt).toArray
   val part1 = day1.countIncreases(numbers)
   println(s"Part 1 increases: $part1")
